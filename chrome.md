@@ -11,7 +11,7 @@ google-chrome --version
 ## 比如我的版本是 Google Chrome 104.0.5112.79
 ## 假如 你的版本不是这个, 接下来咱们再说
 ## 打开网页 https://registry.npmmirror.com/binary.html?path=chromedriver/ 查找对应版本chromedriver
-cd /tmp
+cd /tmp &&
 wget https://registry.npmmirror.com/-/binary/chromedriver/104.0.5112.79/chromedriver_linux64.zip
 ## 解压缩 chromedriver 文件 到指定目录
 unzip chromedriver_linux64.zip /usr/bin
