@@ -14,7 +14,7 @@ google-chrome --version
 cd /tmp &&
 wget https://registry.npmmirror.com/-/binary/chromedriver/104.0.5112.79/chromedriver_linux64.zip
 ## 解压缩 chromedriver 文件 到指定目录
-unzip chromedriver_linux64.zip /usr/bin
-## 检查 /etc/profile 文件中是否有path 指向 /usr/bin  这个目录 如果没有,请手动添加 export PATH=$PATH:/usr/local/bin/ChromeDriver 然后输入 source /etc/profile 同步变量
+unzip chromedriver_linux64.zip && mv chromedriver /usr/bin
+## 检查 /etc/profile 文件中是否有path 指向 /usr/bin  这个目录 如果没有,请手动添加 export PATH=$PATH:/usr/bin/chromedriver 然后输入 source /etc/profile 同步变量
 chromedriver   
 ## 查看输出文件 Starting ChromeDriver 104.0.5112.79 与chrome 版本相同即可, 如果版本无法一一对应,请按照chromedriver 的版本略小于chrome版本来算,千万不要driver版本号大于chrome, 否则无法使用  提示ChromeDriver was started successfully 即可
